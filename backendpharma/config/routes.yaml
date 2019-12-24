@@ -1,0 +1,78 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\LuckyController::number
+#connexion
+connexion:
+    path: /login/connexion
+    controller: App\Controller\LoginController::connexion
+deconnexion:
+    path: /login/deconnexion
+    controller: App\Controller\LoginController::deconnexion
+checkConnected:
+    path: /login/checkConnected
+    controller: App\Controller\LoginController::checkConnected
+#end connexion
+#vente
+getProducts:
+    path: /vente/getProducts
+    controller: App\Controller\VenteController::getProducts
+saveBill:
+    path: /vente/saveBill
+    controller: App\Controller\VenteController::saveBill
+getProductByDate:
+    path: /vente/getProductByDate
+    controller: App\Controller\VenteController::getProductByDate
+getProductByInterval:
+    path: /vente/getProductByInterval
+    controller: App\Controller\VenteController::getProductsByInterval
+#end vente
+#stock
+getListProduct:
+    path: /stock/listProduct
+    controller: App\Controller\StockController::getListProduct
+updateProduct:
+    path: /stock/updateProduct
+    controller: App\Controller\StockController::updateProduct
+addProduct:
+    path: /stock/addProduct
+    controller: App\Controller\StockController::addProduct
+reappro:
+    path: /stock/reappro
+    controller: App\Controller\StockController::reappro
+profil:
+    path: /profil
+    controller: App\Controller\ProfilController::getProfil
+updateProfil:
+    path: /profil/updateProfil
+    controller: App\Controller\ProfilController::updateProfil
+getCompte:
+    path: /compte/getCompte
+    controller: App\Controller\CompteController::getCompte
+addCompte:
+    path: /compte/addCompte
+    controller: App\Controller\CompteController::addCompte
+getPrivilege:
+    path: /compte/getPrivilege
+    controller: App\Controller\CompteController::getPrivilege
+activerCompte:
+    path: /compte/activerCompte
+    controller: App\Controller\CompteController::activerUser
+changerPassword:
+    path: /compte/changerPassword
+    controller: App\Controller\CompteController::updatePassword
+addFournisseur:
+    path: /fournisseur/addFournisseur
+    controller: App\Controller\FournisseurController::addFournisseur
+getListFournisseur:
+    path: /fournisseur/liste
+    controller: App\Controller\FournisseurController::getListeFournisseur
+addRayon:
+    path: /rayon/newRayon
+    controller: App\Controller\RayonController::addNewRayon
+getListRayons:
+    path: /rayon/liste
+    controller: App\Controller\RayonController::getRayonByIdShop
